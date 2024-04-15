@@ -1,18 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 @font-face {
-  font-family: 'Title';
-  src: url('../../public/fonts/Neglige.otf');
+  font-family: "Title";
+  src: url("../../public/fonts/Neglige.otf");
 }
 @font-face {
-  font-family: 'Body';
-  src: url('../../public/fonts/NeueMontreal_Medium.otf');
+  font-family: "Body";
+  src: url("../../public/fonts/NeueMontreal_Medium.otf");
 }
 
-body{
+body {
   margin: 0px;
-  font-family: 'Body';
-  margin-bottom: 100vh;
+  font-family: "Body";
+  
 }
 
-h2{
-  font-family: 'Title';
+h2,h1 {
+  font-family: "Title";
 }
+

@@ -1,6 +1,6 @@
 'use client';
 import styles from './page.module.scss'
-import { projects } from '../data';
+import {  wonders } from '../data';
 import Card from '../components/Card';
 import { useScroll } from 'framer-motion';
 import { useEffect, useRef } from 'react';
@@ -26,9 +26,10 @@ export default function Home() {
 
   return (
     <main ref={container} className={styles.main}>
+      <h1 className='w-full text-center text-7xl'>Les 7 merveilles du monde</h1>
       {
-        projects.map( (project, i) => {
-          const targetScale = 1 - ( (projects.length - i) * 0.05);
+        wonders.map( (project, i) => {
+          const targetScale = 1 - ( (wonders.length - i) * 0.05);
           return <Card key={`p_${i}`} i={i} {...project} progress={scrollYProgress} range={[i * .25, 1]} targetScale={targetScale}/>
         })
       }
